@@ -26,19 +26,19 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "21655449")
-    API_HASH  = os.environ.get("API_HASH", "112be9974e163f6dbd645ce4b94f4e6a")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6782811930:AAFDqkELEVJeGGlTbI5tavrac7RfZ7-Qzw4") 
+    API_ID    = os.environ.get("API_ID", "8540740")
+    API_HASH  = os.environ.get("API_HASH", "76d20ed4f2e657e4ad0609ca1f8eef79")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5678767673:AAEIC9ncghQ7V5tq67lBNuNo9l8uwRDTwv8") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Aman")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Aman:Aman@aman.qgwohom.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/65df62b72f17142d98438.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1229852181').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "team_netflix") 
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "0) 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
     # wes response configuration     
